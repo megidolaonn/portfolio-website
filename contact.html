@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact</title>
+	<link rel="shortcut icon" href="http://wikipedia.com/static/favicon/wikipedia.ico">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.production.css">
+</head>
+
+<body>
+	<header class="page-header">
+		<img src="img/CFname.png" alt="CF name screenshot" class="page-header__item" />
+		<nav class="page-header__item">	
+			<ul role="menubar" class="navigation-list">
+				<li role="presentation">
+					<a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+				</li>
+				<li role="presentation">	
+					<a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
+				</li>
+				<li role="presentation">
+					<a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+				</li>
+				<li role="presentation">
+					<a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<h1>Contact</h1>
+
+	<div>
+	    CareerFoundry GmbH<br>
+		Köpenicker Str. 126 <br>
+		10179 Berlin<br>
+	    Deutschland<br>
+	    <br>
+	    Tel: <a href="tel:+491234567" role="phone-number">+49 1234567</a><br>
+  		Skype: <a href="skype:hello.careerfoundry"> hello.careerfoundry</a><br>
+  		Email: <a href="mailto:yuehshaoxiong@gmail.com">yuehshaoxiong@gmail.com</a><br>
+  		<a href="mailto:yuehshaoxiong@gmail.com">Contact me</a>
+	</div>
+
+	<form action="" method="post" id="contact-form">
+	  	<label class="standard-label" for="contact-email">E-mail: </label>
+	  	<input type="email" required id="contact-email">
+
+	  	<label class="standard-label" for="contact-tel">Telephone: </label>
+	  	<input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="contact-tel">
+
+	  	<label class="standard-label" for="contact-msg">Message: </label>
+	 	<textarea maxlength="240" required id="contact-msg"></textarea>
+
+	  	<button type="submit">Send Message</button>
+	</form>
+
+	<footer class="page-footer">
+		<p>Find me on</p>
+		<div class="social-media">
+			<img src="img/github-icon.svg" alt="Github logo">
+			<img src="img/twitter-icon.svg" alt="Twitter logo">
+			<img src="img/linkedin-icon.svg" alt="LinkedIn logo">
+		</div>
+	</footer>	
+
+<script src="js/tota11y.min.js"></script>
+</body>
+
+</html>
