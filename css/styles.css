@@ -75,22 +75,35 @@ button:focus,
 	opacity: 0.8;
 }
 
-.button_secondary {
-	background-color: var(--secondary-color);
-	color: var(--dark-grey);
+#contact-heading {
+	text-align: center;
 }
 
-.profile__portrait {
-	float: left;
+#work-heading {
+	text-align: center;
+}
+
+
+.profile img {
 	width: 250px;
-	margin-right: 40px;
 	border-radius: 50%;
-	border-bottom: none;
-	transition: border 0.3s;
+	border: 1px solid var(--primary-color);
 }
 
-.profile__portrait:hover {
-	border-bottom: 2px solid black;
+.profile-photo {
+	grid-column: 2 / 3;
+	text-align: center;
+}
+
+.profile-info {
+	grid-column: 3 / 4;
+	text-align: center;
+}
+
+.profile {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	margin-top: 90px;
 }
 
 .page-footer {
@@ -100,21 +113,21 @@ button:focus,
 	text-align: center;
 }
 
-.profile {
-	max-width: 700px;
-	margin: 50px auto;
-}
-
 .page-header {
 	display: flex;
 	width: 100%;
-	padding: 10px;
+	padding: 0px 20px;
 	border-bottom: 1px solid lightgray;
+}
+
+.page-header img {
+	border-radius: 3%;
 }
 
 .page-header__item {
 	flex: 0 1 200px;
 	height: 70px;
+	margin-top: 4px;
 }
 
 .page-header__item:last-child {
@@ -138,6 +151,38 @@ button:focus,
 
 .about-blurb {
 	text-align: center;
+}
+
+#contact-form {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	text-align: left;
+	margin: 0 auto;
+}
+
+#contact-form button {
+	margin-top: 10px;
+}
+
+.contact-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 20px;
+}
+
+.contact-info {
+	text-align: center;
+	grid-column: 2 / 3;
+}
+
+.contact-info__form {
+	grid-column: 3 / 4;
+}
+
+#web {
+	background-color: black;
+	color: #ffe599;
 }
 
 /* start grid fallback */
@@ -207,22 +252,23 @@ button:focus,
 		margin: 20px;
 	}
 	 .grid__item {
-		background-color: var(--secondary-color);
+		background-color: azure;
 		width: auto;
-		min-height: auto;
+		min-height: 200px;
 		margin: 0;
 		text-align: center;
+		border: 1px solid lightblue;
 	}
 }
 
 @media all and (max-width: 500px) {
-	.grid{
+	.grid {
 		grid-template-columns: 1fr;
-	}	
+	}
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
-	.grid{
+	.grid {
 		grid-template-columns: 1fr 1fr;
 	}
 }
