@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Contact Brian</title>
+	<title>Contact Lisa Gringl</title>
 	<link rel="shortcut icon" href="http://wikipedia.com/static/favicon/wikipedia.ico">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +15,7 @@
 
 <body>
 	<header class="page-header">
-		<img src="img/CFname.png" alt="CF name screenshot" class="page-header__item" />
+		<img src="http://placekitten.com/200/70" alt="name logo" class="page-header__item" />
 		<nav class="page-header__item">	
 			<ul role="menubar" class="navigation-list">
 				<li role="presentation">
@@ -34,32 +34,35 @@
 		</nav>
 	</header>
 
-	<h1>Contact</h1>
+	<h1 id="contact-heading">Contact</h1>
 
-	<div>
-	    CareerFoundry GmbH<br>
-		Köpenicker Str. 126 <br>
-		10179 Berlin<br>
-	    Deutschland<br>
-	    <br>
-	    Tel: <a href="tel:+491234567" role="phone-number">+49 1234567</a><br>
-  		Skype: <a href="skype:hello.careerfoundry"> hello.careerfoundry</a><br>
-  		Email: <a href="mailto:yuehshaoxiong@gmail.com">yuehshaoxiong@gmail.com</a><br>
-  		<a href="mailto:yuehshaoxiong@gmail.com">Contact me</a>
+	<div class="contact-wrapper">
+		<div class="contact-info">
+		    CareerFoundry GmbH<br>
+			Köpenicker Str. 126 <br>
+			10179 Berlin<br>
+		    Deutschland<br>
+		    <br>
+		    Tel: <a href="tel:+491234567" role="phone-number">+49 1234567</a><br>
+	  		Skype: <a href="skype:hello.careerfoundry"> hello.careerfoundry</a><br>
+	  		Email: <a href="mailto:yuehshaoxiong@gmail.com">office@careerfoundry.com</a><br>
+	  		<a href="mailto:yuehshaoxiong@gmail.com">Contact me</a>
+		</div>
+		<div class="contact-info__form">
+			<form action="" method="post" id="contact-form">
+			  	<label class="standard-label" for="contact-email">E-mail: </label>
+			  	<input type="email" required id="contact-email">
+
+			  	<label class="standard-label" for="contact-tel">Telephone: </label>
+			  	<input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="contact-tel">
+
+			  	<label class="standard-label" for="contact-msg">Message: </label>
+			 	<textarea maxlength="240" required id="contact-msg"></textarea>
+
+			  	<button type="submit">Send Message</button>
+			</form>
+		</div>
 	</div>
-
-	<form action="" method="post" id="contact-form">
-	  	<label class="standard-label" for="contact-email">E-mail: </label>
-	  	<input type="email" required id="contact-email">
-
-	  	<label class="standard-label" for="contact-tel">Telephone: </label>
-	  	<input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="contact-tel">
-
-	  	<label class="standard-label" for="contact-msg">Message: </label>
-	 	<textarea maxlength="240" required id="contact-msg"></textarea>
-
-	  	<button type="submit">Send Message</button>
-	</form>
 
 	<footer class="page-footer">
 		<p>Find me on</p>
