@@ -117,11 +117,14 @@ button:focus,
 	display: flex;
 	width: 100%;
 	padding: 0px 20px;
-	border-bottom: 1px solid lightgray;
+	border-bottom: 1px solid rgba(53, 123, 112, 0.5);
 }
 
 .page-header img {
 	border-radius: 3%;
+	min-width: 160px;
+	width: 100%;
+	object-fit: cover;
 }
 
 .page-header__item {
@@ -193,7 +196,7 @@ button:focus,
 /* end grid fallback */
 
 .skill-table {
-	margin: 18px auto;
+	margin: 28px auto;
 }
 
 .berlin-illustration {
@@ -265,11 +268,20 @@ button:focus,
 	.grid {
 		grid-template-columns: 1fr;
 	}
+	.navigation-list {
+		font-size: 12px;
+	}
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
 	.grid {
 		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media all and (min-width: 500px) and (max-width: 600px) {
+	.navigation-list {
+		font-size: 14px;
 	}
 }
 
@@ -280,4 +292,21 @@ button:focus,
   	h1 {
   		font-size: 22px;
   	}
+  	.profile {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+	.profile-info {
+		grid-column: 2 / 3;
+		grid-row: 2 / 3;
+	}
+	.contact-wrapper {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+	.contact-info__form {
+		grid-column: 2 / 3;
+		grid-row: 2 / 3;
+		margin-top: 16px;
+	}
 }
